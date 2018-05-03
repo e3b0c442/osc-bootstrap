@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Omaha Symphonic Chorus - Auditions</title>
+    <meta name="description" content="Omaha Symphonic Chorus">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/auditionform.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-osc navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#osc-navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img class="center-block" alt="Omaha Symphonic Chorus" src="img/osc2.svg">
+                    <div class="navbar-subbrand">Omaha Symphonic Chorus</div>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="osc-navbar-collapse">
+                <ul class="nav navbar-nav navbar-nav-osc">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="active"><a href="auditions.html">Audition</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                </ul>
+                <div class="navbar-text navbar-right social-buttons hidden-xs">
+                    <a alt="Facebook" href="https://www.facebook.com/omahasymphonicchorus" target="_blank" class="btn btn-link"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+                    <a alt="Support us with a purchase from Amazon Smile" href="https://smile.amazon.com" target="_blank" class="btn btn-link"><i class="fa fa-amazon fa-lg" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="wrapper">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" id="osc-body">
+                <h1 class="page-header">Audition</h1>
+                <img src="img/rehearsal.jpg" class="img-responsive center-block">
+                <p></p>
+                <p>Auditions are traditionally held in the late summer of each year. However, the director may schedule auditions at other times as requested by prospective singers. Those wishing to audition should have a prepared solo. An accompanist will be provided. Please bring music for the accompanist. You will also be asked to do some simple sight reading and vocalizations.  To schedule an audition or for more information enter information into the form below.</p>
+                <form id="audition-form">
+                    <div class="form-group" id="name-group">
+                        <label for="name">Name</label>
+                        <input class="form-control" type="text" id="name" data-validation-type="non-empty!" data-invalid=1 placeholder="Name">
+                        <span class="help-block">Name is required</span>
+                    </div>
+                    <div class="form-group" id="email-group">
+                        <label for="email">Email address</label>
+                        <input class="form-control" type="text" id="email" data-validation-type="email!" data-invalid=1 placeholder="Email address">
+                        <span class="help-block">Email is required, e.g. johndoe@gmail.com</span>
+                    </div>
+                    <div class="form-group" id="phone-group">
+                        <label for="phone">Phone number</label>
+                        <input class="form-control" type="text" id="phone" data-validation-type="phone" data-invalid=1 placeholder="Phone number (optional)">
+                        <span class="help-block" style="display: none;">Invalid phone number</span>
+                    </div>
+                    <div class="form-group" id="comment-group">
+                        <label for="comment">Comment</label>
+                        <textarea id="comment" class="form-control" rows="4" data-validation-type="non-empty!" data-invalid=1></textarea>
+                        <span class="help-block">(required)</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" id="submit" class="btn btn-primary" value="Submit" disabled>
+                    </div>
+                </form>
+            </div>
+            <div class="hidden-xs col-sm-4 col-md-4 col-lg-4" id="osc-sidebar">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h4 class="text-center">Thanks to our generous sponsors!</h4>
+                        <div id="carousel-desktop" class="carousel"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <iframe class="center-block" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fomahasymphonicchorus&tabs=timeline&width=250&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="250" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <iframe class="center-block" src="https://www.google.com/calendar/embed?title=OSC%20Calendar&amp;showTabs=0&amp;mode=AGENDA&amp;height=500&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=calendar%40omahasymphonicchorus.org&amp;color=%232952A3&amp;ctz=America%2FChicago" style=" border-width:0 " width="250" height="500" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
